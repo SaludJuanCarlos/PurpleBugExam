@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* __Homepage__ */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: rgba(19, 79, 92, 1.0);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar div {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar div.person {
+  height: 10%;
+}
+.sidebar div.person .picture{
+  height: 10%;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sidebar div.person .name{
+  height: 10%;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgba(35, 90, 100, 1.0);
+  color: white;
+}
+
+div.content {
+  margin-left: 15%;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+/* __Header__ */
+.header{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid  #71797E;
+}
+
+.header.titles{
+  display: inline-grid;
+  grid-template-columns: 80% 20%;
+  color: #71797E;
+}
+
+.header.titles .header-1{
+  text-align: right; 
+  padding-top: 15px;
+}
+
+.header.titles .logout{
+  padding-top: 15px;
+  text-align: center; 
+}
+
+
+
+/* __Dashboard__ */
+.dashboard-container{
+  padding: 10% 0 0 7%;
+  width: 85%;
+  height: 100%;
+}
+.dashboard-container .dashboard-titles{
+  width: 100%;
+  display: inline-block;
+}
+.dashboard-container .dashboard-titles.left{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  width: 50%;
+}
+.dashboard-container .dashboard-titles.right{
+  text-align: right;
+  font-size: 18px;
+  width: 50%;
+}
+.dashboard-container .dashboard-grid-container{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  background-color: #2196F3;
+}
+.dashboard-container .dashboard-grid-item{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.dashboard-container .dashboard-grid-item.title{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+.dashboard-container .dashboard-grid-item.category{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  padding: 2px;
+  text-align: center;
+}
+.dashboard-container  .dashboard-grid-item.chart-grid{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-align: center;
+}
+.dashboard-container  .dashboard-grid-item.chart-grid .chart{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  height: 300px;
+  text-align: center;
+}
+
+
+
+
+/* __ROLES__ */
+.roles-container{
+  padding: 10% 0 0 7%;
+  width: 85%;
+  height: 100%;
+}
+.roles-container .roles-titles{
+  width: 100%;
+  display: inline-block;
+}
+.roles-container .roles-titles.left{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  width: 50%;
+}
+.roles-container .roles-titles.right{
+  text-align: right;
+  font-size: 18px;
+  width: 50%;
+}
+
+
+/* __Expenses__ */
+.expenses-container{
+  padding: 10% 0 0 7%;
+  width: 85%;
+  height: 100%;
+}
+.expenses-container .expenses-titles{
+  width: 100%;
+  display: inline-block;
+}
+.expenses-container .expenses-titles.left{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  width: 50%;
+}
+.expenses-container .expenses-titles.right{
+  text-align: right;
+  font-size: 18px;
+  width: 50%;
+}
+              
+
+
+/* __Datatable__ */
+table{
+  border: 1px black solid;
+  padding: 0px;
+}
+
+table th{
+  border: 1px black solid;
+  padding: 5px;
+} 
+
+table td{
+  border: 1px black solid;
+  padding: 5px;
+} 
+
+/* __Responsive__ */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  .header{
+    height: 40px;
+    width: 100%;
+  }
+}
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.closeButton{
+  padding: 10px;
+}
